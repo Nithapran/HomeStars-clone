@@ -8,6 +8,7 @@
 import UIKit
 
 class GetStartedViewController: UIViewController {
+    @IBOutlet weak var getStartedLabel: UILabel!
     
     var service: Service?
 
@@ -26,6 +27,8 @@ class GetStartedViewController: UIViewController {
         let leftNavBarButton = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector (didClickCloseButton))
         leftNavBarButton.tintColor = UIColor(named: "TextColor")
         self.navigationItem.leftBarButtonItem = leftNavBarButton
+        
+        self.getStartedLabel.text = "Get Started on your \(self.service?.name ?? "") project"
     }
     
     @objc func didClickCloseButton() {
