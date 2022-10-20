@@ -195,18 +195,16 @@
 		A0050B4D28FE175B008EBEDF /* HomeStars-clone */ = {
 			isa = PBXGroup;
 			children = (
-				A01B1A2029009262002525D1 /* Extension */,
-				A01B19FF28FF8DEF002525D1 /* Commons */,
-				A0222BC228FE240E00CF2916 /* UseCase */,
-				A0222BC128FE240700CF2916 /* Service */,
 				A0050B4E28FE175B008EBEDF /* AppDelegate.swift */,
 				A0050B5028FE175B008EBEDF /* SceneDelegate.swift */,
 				A0050B5428FE175B008EBEDF /* Main.storyboard */,
 				A0050B5728FE1760008EBEDF /* Assets.xcassets */,
 				A0050B5928FE1760008EBEDF /* LaunchScreen.storyboard */,
 				A0050B5C28FE1760008EBEDF /* Info.plist */,
-				A01B1A23290092E7002525D1 /* MainTabBarController.swift */,
-				A01B1A3E2900CC2A002525D1 /* ViewControllerFactory.swift */,
+				A0222BC228FE240E00CF2916 /* UseCase */,
+				A0222BC128FE240700CF2916 /* Service */,
+				A01B19FF28FF8DEF002525D1 /* Commons */,
+				A01B1A2029009262002525D1 /* Extension */,
 			);
 			path = "HomeStars-clone";
 			sourceTree = "<group>";
@@ -231,6 +229,7 @@
 		A01B19FF28FF8DEF002525D1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				A01B1A3E2900CC2A002525D1 /* ViewControllerFactory.swift */,
 				A01B1A0028FF8E02002525D1 /* HorozontalScrollView.swift */,
 			);
 			path = Commons;
@@ -345,10 +344,10 @@
 		A0222BC128FE240700CF2916 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A01B1A6A29010B08002525D1 /* Models */,
-				A01B1A6929010AED002525D1 /* Mocks */,
 				A0222BB528FE23F900CF2916 /* UserService.swift */,
 				A0222BC728FEC38D00CF2916 /* HomeService.swift */,
+				A01B1A6A29010B08002525D1 /* Models */,
+				A01B1A6929010AED002525D1 /* Mocks */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -356,6 +355,7 @@
 		A0222BC228FE240E00CF2916 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				A01B1A23290092E7002525D1 /* MainTabBarController.swift */,
 				A01B1A532901019B002525D1 /* Profile */,
 				A01B1A4A2900E98A002525D1 /* GetStarted */,
 				A01B1A3B2900CB72002525D1 /* ServiceList */,
