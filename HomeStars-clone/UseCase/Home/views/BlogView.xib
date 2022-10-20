@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlogView" customModule="HomeStars_clone" customModuleProvider="target">
             <connections>
                 <outlet property="blogImageView" destination="nnx-Rm-uyF" id="wHW-FO-9Xv"/>
+                <outlet property="btn" destination="dfY-KK-5rK" id="AVx-lN-yyj"/>
                 <outlet property="container" destination="8zV-Vh-1Lf" id="gtH-aw-gnY"/>
                 <outlet property="contentLabel" destination="JTK-Rx-nTp" id="7aH-cd-8Xe"/>
                 <outlet property="titleLabel" destination="ETc-fz-2jE" id="8fA-sT-EzJ"/>
@@ -48,16 +49,25 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfY-KK-5rK">
+                            <rect key="frame" x="0.0" y="0.0" width="460" height="218"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="dfY-KK-5rK" firstAttribute="leading" secondItem="8zV-Vh-1Lf" secondAttribute="leading" id="1Tl-cw-b51"/>
+                        <constraint firstAttribute="bottom" secondItem="dfY-KK-5rK" secondAttribute="bottom" id="NvH-5d-Rqw"/>
                         <constraint firstAttribute="trailing" secondItem="nnx-Rm-uyF" secondAttribute="trailing" constant="10" id="P2v-u8-saH"/>
                         <constraint firstItem="ETc-fz-2jE" firstAttribute="top" secondItem="nnx-Rm-uyF" secondAttribute="bottom" constant="10" id="d51-Ta-Ink"/>
                         <constraint firstAttribute="bottom" secondItem="JTK-Rx-nTp" secondAttribute="bottom" constant="10" id="dwX-yY-R7n"/>
+                        <constraint firstAttribute="trailing" secondItem="dfY-KK-5rK" secondAttribute="trailing" id="f2X-rE-xWc"/>
                         <constraint firstAttribute="trailing" secondItem="JTK-Rx-nTp" secondAttribute="trailing" constant="10" id="ihO-fi-JnS"/>
                         <constraint firstItem="nnx-Rm-uyF" firstAttribute="top" secondItem="8zV-Vh-1Lf" secondAttribute="top" constant="10" id="ob5-y3-Knm"/>
                         <constraint firstItem="ETc-fz-2jE" firstAttribute="leading" secondItem="8zV-Vh-1Lf" secondAttribute="leading" constant="10" id="scj-b9-7m6"/>
                         <constraint firstItem="JTK-Rx-nTp" firstAttribute="top" secondItem="ETc-fz-2jE" secondAttribute="bottom" constant="10" id="ufH-Gq-gUA"/>
+                        <constraint firstItem="dfY-KK-5rK" firstAttribute="top" secondItem="8zV-Vh-1Lf" secondAttribute="top" id="v3F-Ll-Gpx"/>
                         <constraint firstItem="nnx-Rm-uyF" firstAttribute="leading" secondItem="8zV-Vh-1Lf" secondAttribute="leading" constant="10" id="xNq-hJ-EY5"/>
                         <constraint firstItem="JTK-Rx-nTp" firstAttribute="leading" secondItem="8zV-Vh-1Lf" secondAttribute="leading" constant="10" id="xXV-Ej-Hc2"/>
                         <constraint firstAttribute="trailing" secondItem="ETc-fz-2jE" secondAttribute="trailing" constant="10" id="y5D-oe-5X1"/>

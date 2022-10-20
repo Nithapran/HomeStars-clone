@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import RxSwift
 
 class BlogsTableViewCell: UITableViewCell {
-
+    private let bag = DisposeBag()
+    
     @IBOutlet weak var horizontalScrollView: HorizontalScrollView!
+    
+    var navigationController: UINavigationController?
     
     var data: [Blog] = [] {
         didSet {
@@ -43,6 +47,12 @@ extension BlogsTableViewCell: HorizontalScrollViewDelagate {
     
     func viewForTheItemAt(horizontalScrollView: HorizontalScrollView, index: Int) -> UIView {
         let view = BlogView(frame: CGRect.zero)
+        view.btn.rx.tap.bind {
+            if let url = URL(string: self.data[index].link) {
+                UIApplication.shared.open(url)
+            }
+            
+        }.disposed(by: bag)
         view.blog = self.data[index]
         return view
     }

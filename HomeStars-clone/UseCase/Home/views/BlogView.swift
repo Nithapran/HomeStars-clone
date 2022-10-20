@@ -13,7 +13,8 @@ import SDWebImage
 @IBDesignable
 final class BlogView: UIView {
     
-
+    @IBOutlet weak var btn: UIButton!
+    
     @IBOutlet weak var blogImageView: UIImageView!
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var titleLabel: UILabel!

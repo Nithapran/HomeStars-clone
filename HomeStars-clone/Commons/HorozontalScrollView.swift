@@ -78,6 +78,7 @@ class HorizontalScrollView: UIView {
         var x = 0
         while (x < itemCount) {
             let view = delegate?.viewForTheItemAt(horizontalScrollView: self, index: x) ?? UIView()
+            view.tag = x
             stackView.addArrangedSubview(view)
             x = x + 1
         }

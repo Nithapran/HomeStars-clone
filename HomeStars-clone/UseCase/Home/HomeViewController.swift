@@ -105,10 +105,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectsTableViewCell", for: indexPath) as! ProjectsTableViewCell
+            cell.navigationController = self.navigationController
             cell.data = self.viewModel.urgentServices.value
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectsTableViewCell", for: indexPath) as! ProjectsTableViewCell
+            cell.navigationController = self.navigationController
             cell.data = self.viewModel.summerServices.value
             return cell
         case 3:
