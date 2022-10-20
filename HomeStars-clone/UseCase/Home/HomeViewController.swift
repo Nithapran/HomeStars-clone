@@ -21,11 +21,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setUpView()
         bindTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         self.setUpNavBar("", true, false)
-        
-        
-        
-        
     }
     
     private func bindTableView() {
@@ -99,8 +98,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeHeaderTableViewCell", for: indexPath) as! HomeHeaderTableViewCell
             cell.searchView.btn.rx.tap.bind {
+                let viewController = ServiceListViewController(viewModel: ServiceListViewModel(services: self.viewModel.services.value))
+                self.navigationController?.pushViewController (viewController, animated: true)
                 
-                print("tapped")
             }.disposed(by: bag)
             return cell
         case 1:

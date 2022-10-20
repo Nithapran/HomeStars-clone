@@ -101,8 +101,20 @@
                     <view key="view" contentMode="scaleToFill" id="c4q-9a-EJ7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-Hm-qin">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Q24-Ac-an5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y5f-Hm-qin" firstAttribute="top" secondItem="Q24-Ac-an5" secondAttribute="top" id="QCV-89-WGN"/>
+                            <constraint firstItem="y5f-Hm-qin" firstAttribute="leading" secondItem="Q24-Ac-an5" secondAttribute="leading" id="STq-te-A0T"/>
+                            <constraint firstItem="Q24-Ac-an5" firstAttribute="bottom" secondItem="y5f-Hm-qin" secondAttribute="bottom" id="bPs-BO-bx1"/>
+                            <constraint firstItem="Q24-Ac-an5" firstAttribute="trailing" secondItem="y5f-Hm-qin" secondAttribute="trailing" id="iR8-zD-aET"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yj1-xK-2xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

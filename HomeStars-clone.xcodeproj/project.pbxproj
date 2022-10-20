@@ -40,6 +40,10 @@
 		A01B1A352900B62C002525D1 /* BlogsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = A01B1A342900B62B002525D1 /* BlogsMock.json */; };
 		A01B1A372900BC34002525D1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01B1A362900BC34002525D1 /* SearchView.swift */; };
 		A01B1A392900BC50002525D1 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01B1A382900BC50002525D1 /* SearchView.xib */; };
+		A01B1A3D2900CBA0002525D1 /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01B1A3C2900CBA0002525D1 /* ServiceListViewController.swift */; };
+		A01B1A3F2900CC2A002525D1 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01B1A3E2900CC2A002525D1 /* ViewControllerFactory.swift */; };
+		A01B1A452900DF8F002525D1 /* ServiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01B1A442900DF8F002525D1 /* ServiceListViewModel.swift */; };
+		A01B1A492900E3AF002525D1 /* ServiceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01B1A472900E3AE002525D1 /* ServiceListViewController.xib */; };
 		A0222BB928FE23FA00CF2916 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0222BB228FE23F900CF2916 /* Request.swift */; };
 		A0222BBA28FE23FA00CF2916 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0222BB328FE23F900CF2916 /* Repository.swift */; };
 		A0222BBB28FE23FA00CF2916 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0222BB428FE23F900CF2916 /* Profile.swift */; };
@@ -105,6 +109,10 @@
 		A01B1A342900B62B002525D1 /* BlogsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BlogsMock.json; sourceTree = "<group>"; };
 		A01B1A362900BC34002525D1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A01B1A382900BC50002525D1 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		A01B1A3C2900CBA0002525D1 /* ServiceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
+		A01B1A3E2900CC2A002525D1 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		A01B1A442900DF8F002525D1 /* ServiceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewModel.swift; sourceTree = "<group>"; };
+		A01B1A472900E3AE002525D1 /* ServiceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceListViewController.xib; sourceTree = "<group>"; };
 		A0222BB228FE23F900CF2916 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A0222BB328FE23F900CF2916 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		A0222BB428FE23F900CF2916 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -181,6 +189,7 @@
 				A0050B5928FE1760008EBEDF /* LaunchScreen.storyboard */,
 				A0050B5C28FE1760008EBEDF /* Info.plist */,
 				A01B1A23290092E7002525D1 /* MainTabBarController.swift */,
+				A01B1A3E2900CC2A002525D1 /* ViewControllerFactory.swift */,
 			);
 			path = "HomeStars-clone";
 			sourceTree = "<group>";
@@ -249,6 +258,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		A01B1A3B2900CB72002525D1 /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				A01B1A3C2900CBA0002525D1 /* ServiceListViewController.swift */,
+				A01B1A442900DF8F002525D1 /* ServiceListViewModel.swift */,
+				A01B1A472900E3AE002525D1 /* ServiceListViewController.xib */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		A01B1A4A2900E98A002525D1 /* GetStarted */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GetStarted;
+			sourceTree = "<group>";
+		};
 		A0222BC028FE240000CF2916 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +306,8 @@
 		A0222BC228FE240E00CF2916 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				A01B1A4A2900E98A002525D1 /* GetStarted */,
+				A01B1A3B2900CB72002525D1 /* ServiceList */,
 				A01B1A3A2900C9CF002525D1 /* Home */,
 			);
 			path = UseCase;
@@ -408,6 +436,7 @@
 				A01B1A0928FF8F3B002525D1 /* ServiceView.xib in Resources */,
 				A01B1A392900BC50002525D1 /* SearchView.xib in Resources */,
 				A01B1A352900B62C002525D1 /* BlogsMock.json in Resources */,
+				A01B1A492900E3AF002525D1 /* ServiceListViewController.xib in Resources */,
 				A0050B5628FE175B008EBEDF /* Main.storyboard in Resources */,
 				A01B1A0E28FF966C002525D1 /* ProjectsTableViewCell.xib in Resources */,
 			);
@@ -435,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01B1A1728FFBD10002525D1 /* HomeViewModel.swift in Sources */,
+				A01B1A3F2900CC2A002525D1 /* ViewControllerFactory.swift in Sources */,
 				A01B1A0828FF8F3B002525D1 /* ServiceView.swift in Sources */,
 				A0222BBC28FE23FA00CF2916 /* UserService.swift in Sources */,
 				A01B1A24290092E7002525D1 /* MainTabBarController.swift in Sources */,
@@ -448,6 +478,7 @@
 				A0222BB928FE23FA00CF2916 /* Request.swift in Sources */,
 				A0222BC828FEC38D00CF2916 /* HomeService.swift in Sources */,
 				A01B1A262900AAB4002525D1 /* Blog.swift in Sources */,
+				A01B1A452900DF8F002525D1 /* ServiceListViewModel.swift in Sources */,
 				A0222BCA28FEC46E00CF2916 /* Mockable.swift in Sources */,
 				A01B1A0D28FF966C002525D1 /* ProjectsTableViewCell.swift in Sources */,
 				A0222BBA28FE23FA00CF2916 /* Repository.swift in Sources */,
@@ -456,6 +487,7 @@
 				A0222BC628FEC2CA00CF2916 /* Service.swift in Sources */,
 				A01B1A1D2900411F002525D1 /* SimpleHeaderView.swift in Sources */,
 				A01B1A0128FF8E02002525D1 /* HorozontalScrollView.swift in Sources */,
+				A01B1A3D2900CBA0002525D1 /* ServiceListViewController.swift in Sources */,
 				A0050B4F28FE175B008EBEDF /* AppDelegate.swift in Sources */,
 				A01B1A222900927E002525D1 /* UIViewController+Extension.swift in Sources */,
 				A01B1A1528FFB578002525D1 /* MockHomeService.swift in Sources */,
